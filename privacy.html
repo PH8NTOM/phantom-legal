@@ -1,23 +1,19 @@
 <!doctype html>
-<html lang="ko">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="PHANTOM Discord 봇 개인정보 처리방침">
-<meta name="theme-color" content="#0b1020">
-<title>개인정보 처리방침 · PHANTOM</title>
-<link rel="stylesheet" href="./style.css">
-</head>
-<body>
-<header><div class="wrapper top">
-<a class="brand" href="./index.html"><span class="logo" aria-hidden="true">P</span> PHANTOM</a>
-<nav aria-label="페이지 이동"><a href="./index.html">홈</a><a href="./terms.html">이용약관</a><a href="./privacy.html" aria-current="page">개인정보 처리방침</a></nav>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="가이드온(GuideOn) 개인정보 처리방침 · 문의 support.guideon@gmail.com">
+<meta name="theme-color" content="#080b17">
+<meta property="og:title" content="개인정보 처리방침 | 가이드온">
+<meta property="og:description" content="가이드온(GuideOn) 개인정보 처리방침 · 문의 support.guideon@gmail.com">
+<meta property="og:type" content="website">
+<title>개인정보 처리방침 | 가이드온 GuideOn</title>
+<link rel="stylesheet" href="./style.css"><script src="./script.js" defer></script>
+</head><body><div class="aurora" aria-hidden="true"></div><div id="scroll-progress" aria-hidden="true"></div>
+<header class="site-header"><div class="shell header-inner">
+<a class="brand" href="./index.html" aria-label="가이드온 홈"><span class="mark" aria-hidden="true">G</span><span class="brand-label"><span class="brand-name">가이드온 <span style="font-size:12px;color:#aebce3;font-weight:650">GuideOn</span></span><span class="brand-sub">BY __pha4tom_</span></span></a>
+<nav class="site-nav" aria-label="사이트 메뉴"><a class="nav-link" href="./index.html">홈</a><a class="nav-link" href="./terms.html">이용약관</a><a class="nav-link" href="./privacy.html" aria-current="page">개인정보 처리방침</a></nav>
 </div></header>
-<main class="wrapper"><div class="kicker">PRIVACY POLICY</div><h1>개인정보 처리방침</h1>
-<p class="lead">PHANTOM이 어떤 정보를 이용하고 기록하는지, 어디에 보관하는지 이해하기 쉽게 안내합니다.</p>
-<p class="meta">시행일: 2026년 11월 8일 · 개인정보 처리 주체: PHANTOM 운영자</p>
-<div class="warning"><strong>게시 전 확인 필요:</strong> 실제 문의용 이메일 주소를 준비한 뒤 <code>CONTACT_EMAIL_HERE</code>를 수정해야 합니다. 아래 내용은 제공된 PHANTOM 소스코드를 기준으로 작성되었으며 실제 운영 방식과 일치하는지 운영자가 최종 확인해야 합니다.</div>
-<section class="section"><h2>1. 처리하는 정보 및 목적</h2>
+<main class="shell"><div class="legal-intro reveal"><span class="tag">가이드온 공식 안내</span><div class="eyebrow">PRIVACY POLICY</div><h1><span class="gradient-ink">개인정보 처리방침</span></h1><p class="lead">어떤 정보를 기록하고, 왜 필요한지 알기 쉽게 안내해 드릴게요</p><p class="meta">시행일 · 2026년 11월 8일 &nbsp;|&nbsp; 운영자 · __pha4tom_</p></div><div class="legal-layout"><aside class="toc reveal" aria-label="문서 목차"><div class="toc-title">ON THIS PAGE · 목차</div><a href="#section-1">1. 처리하는 정보 및 목적</a><a href="#section-2">2. 정보 처리 방식</a><a href="#section-3">3. 보유 및 삭제</a><a href="#section-4">4. 제3자 서비스 및 위탁 관련 안내</a><a href="#section-5">5. 보안 및 접근</a><a href="#section-6">6. 이용자 권리 및 문의</a><a href="#section-7">7. 방침 변경</a></aside><div class="legal-content"><section class="policy-section reveal" id="section-1"><h2>1. 처리하는 정보 및 목적</h2>
 <p>봇의 기본 기능을 위해 아래 정보를 처리할 수 있습니다.</p>
 <table><thead><tr><th>정보</th><th>이용 목적</th></tr></thead><tbody>
 <tr><td>디스코드 이용자 ID, 서버 ID</td><td>서버별 이용자를 구분하고 동의·인증 상태를 관리</td></tr>
@@ -25,23 +21,16 @@
 <tr><td>서버의 채널 ID, 역할 ID, 안내 설정</td><td>환영 메시지, 규칙 안내, 역할 관리 및 서버별 설정 제공</td></tr>
 <tr><td>DM 발송 상태, 역할 처리 상태 및 오류 정보</td><td>인증 완료 안내를 전송하고 전송 실패 및 운영 오류를 기록</td></tr>
 </tbody></table>
-<p>봇의 현재 소스코드는 서버의 일반 채팅 내용을 수집·분석하는 기능을 목적으로 하지 않으며, 규칙 동의 버튼과 서버 멤버·역할 변경 이벤트를 처리합니다. 인증 양식에 이용자가 직접 작성하는 내용은 해당 디스코드 채널과 서버 운영진의 별도 관리 영역입니다.</p></section>
-<section class="section"><h2>2. 정보 처리 방식</h2>
-<ul><li>일부 정보는 봇 운영 환경의 로컬 SQLite 데이터베이스에 저장됩니다.</li><li>입장, 규칙 동의, 인증 완료, 오류 등의 기록은 해당 서버가 지정한 운영진 로그 채널로 전송될 수 있습니다. 이 로그에는 이용자 ID와 발생 시각 등이 포함됩니다.</li><li>인증 완료 시 Discord DM을 보내며, 전송 성공·실패 여부를 저장할 수 있습니다.</li><li>봇의 알림 및 로그 전달에는 Discord 서비스가 사용됩니다.</li></ul></section>
-<section class="section"><h2>3. 보유 및 삭제</h2>
+<p>봇의 현재 소스코드는 서버의 일반 채팅 내용을 수집·분석하는 기능을 목적으로 하지 않으며, 규칙 동의 버튼과 서버 멤버·역할 변경 이벤트를 처리합니다. 인증 양식에 이용자가 직접 작성하는 내용은 해당 디스코드 채널과 서버 운영진의 별도 관리 영역입니다.</p></section><section class="policy-section reveal" id="section-2"><h2>2. 정보 처리 방식</h2>
+<ul><li>일부 정보는 봇 운영 환경의 로컬 SQLite 데이터베이스에 저장됩니다.</li><li>입장, 규칙 동의, 인증 완료, 오류 등의 기록은 해당 서버가 지정한 운영진 로그 채널로 전송될 수 있습니다. 이 로그에는 이용자 ID와 발생 시각 등이 포함됩니다.</li><li>인증 완료 시 Discord DM을 보내며, 전송 성공·실패 여부를 저장할 수 있습니다.</li><li>봇의 알림 및 로그 전달에는 Discord 서비스가 사용됩니다.</li></ul></section><section class="policy-section reveal" id="section-3"><h2>3. 보유 및 삭제</h2>
 <p>이용자별 동의·인증 상태는 서버에서의 인증 관리에 필요한 동안 유지됩니다. 봇은 서버에서 이용자 퇴장 이벤트를 확인하면 내부 이용자 상태 기록을 삭제하도록 구현되어 있습니다. 다만 연결 장애나 오류가 있으면 삭제가 지연될 수 있습니다.</p>
 <p>서버별 설정은 서비스 설정을 유지하는 동안 보존될 수 있으며, 서버 운영진 로그 채널에 남은 메시지는 해당 서버의 보관·삭제 정책에 따라 별도로 유지될 수 있습니다. Discord가 자체적으로 보관하는 정보에는 Discord의 정책이 적용됩니다.</p>
-<p>보유 정보 확인·삭제 요청이 필요하다면 아래 문의처로 연락해 주세요. 요청자의 권한을 확인한 후 적용 가능한 범위에서 처리합니다.</p></section>
-<section class="section"><h2>4. 제3자 서비스 및 위탁 관련 안내</h2>
+<p>보유 정보 확인·삭제 요청이 필요하다면 아래 문의처로 연락해 주세요. 요청자의 권한을 확인한 후 적용 가능한 범위에서 처리합니다.</p></section><section class="policy-section reveal" id="section-4"><h2>4. 제3자 서비스 및 위탁 관련 안내</h2>
 <p>봇은 Discord API를 통해 사용자 정보와 서버 상태를 확인하고 메시지를 전송합니다. Discord가 자체 서비스 운영을 위해 처리하는 정보에는 <a href="https://discord.com/privacy" rel="noopener noreferrer">Discord 개인정보 처리방침</a>이 적용됩니다.</p>
 <p>이 안내 웹사이트를 GitHub Pages에 게시하는 경우, 웹페이지 접속과 관련한 정보는 GitHub의 웹 호스팅 정책에 따라 처리될 수 있습니다. 해당 정보는 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub 개인정보 관련 안내</a>에서 확인할 수 있습니다.</p>
-<p>PHANTOM은 이 웹페이지에 별도의 분석 도구나 광고 추적기를 포함하지 않습니다.</p></section>
-<section class="section"><h2>5. 보안 및 접근</h2>
-<p>봇 운영자는 관련 데이터와 봇 토큰에 대한 접근을 제한하고, 봇이 기록을 전송하는 운영진 로그 채널은 서버 관리자가 비공개로 유지하도록 안내합니다. 인터넷 서비스 및 외부 플랫폼의 특성상 모든 보안 위험을 완전히 제거할 수는 없습니다.</p></section>
-<section class="section"><h2>6. 이용자 권리 및 문의</h2>
+<p>가이드온은 이 웹페이지에 별도의 분석 도구나 광고 추적기를 포함하지 않습니다.</p></section><section class="policy-section reveal" id="section-5"><h2>5. 보안 및 접근</h2>
+<p>봇 운영자는 관련 데이터와 봇 토큰에 대한 접근을 제한하고, 봇이 기록을 전송하는 운영진 로그 채널은 서버 관리자가 비공개로 유지하도록 안내합니다. 인터넷 서비스 및 외부 플랫폼의 특성상 모든 보안 위험을 완전히 제거할 수는 없습니다.</p></section><section class="policy-section reveal" id="section-6"><h2>6. 이용자 권리 및 문의</h2>
 <p>이용자는 자신과 관련된 봇 데이터에 대한 확인, 정정 또는 삭제를 요청할 수 있습니다. 요청 처리 과정에서 본인 또는 해당 서버의 관리 권한 확인이 필요할 수 있습니다.</p>
-<div class="note">개인정보 문의 및 삭제 요청: <strong>CONTACT_EMAIL_HERE</strong><br>운영 주체: PHANTOM 운영자</div></section>
-<section class="section"><h2>7. 방침 변경</h2><p>개인정보 처리 내용이 변경되면 이 페이지의 내용 및 시행일을 갱신하겠습니다.</p></section></main>
-<footer><div class="wrapper"><span>© 2026 PHANTOM 운영자 · Discord와 공식 제휴한 서비스가 아닙니다</span><span><a href="./terms.html">이용약관</a> · <a href="./privacy.html">개인정보 처리방침</a></span></div></footer>
-</body>
-</html>
+<div class="note">개인정보 문의 및 삭제 요청: <strong><a href="mailto:support.guideon@gmail.com">support.guideon@gmail.com</a></strong><br/>운영 주체: 가이드온 운영자</div></section><section class="policy-section reveal" id="section-7"><h2>7. 방침 변경</h2><p>개인정보 처리 내용이 변경되면 이 페이지의 내용 및 시행일을 갱신하겠습니다.</p></section><div class="legal-hint reveal">💙 가이드온은 서버별로 설정되는 안내 봇이에요. 서버의 규칙·인증 심사와 접근 권한은 각 서버 운영진이 관리합니다.</div></div></div></main>
+<footer class="site-footer"><div class="shell footer-inner"><div><div class="footer-brand">가이드온 · GuideOn</div><div class="footer-caption">Developed by __pha4tom_ · Discord 공식 제휴 서비스가 아닙니다</div><div class="footer-caption">© 2026 GuideOn</div></div><div class="footer-links"><a href="./terms.html">이용약관</a><a href="./privacy.html">개인정보 처리방침</a><a href="mailto:support.guideon@gmail.com">문의하기 ↗</a></div></div></footer>
+</body></html>
